@@ -4,7 +4,6 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-import math
 
 def jednadžba_pravca(x1, y1, x2, y2, opcija):
     if x1 == x2:

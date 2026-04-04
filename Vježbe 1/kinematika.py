@@ -11,14 +11,20 @@ def jednoliko_gibanje(F, m, v0, s0, vrijeme):
 
     a_konst = F/m
     a = np.ones(len(t)) * a_konst
+    v = np.zeros(len(t))               
+    s = np.zeros(len(t))
 
-    v = []
-    s = []
-    for i in t:
-        v_tren = v0*i + a_konst*i
-        s_tren = s0 + v0*i + (1/2)*a_konst*(i**2)
-        v.append(v_tren)
-        s.append(s_tren)
+    for i in range(1, len(t)):            
+        v[i] = v[i-1] + a*dt
+        s[i] = s[i-1] + v[i-1]*dt
+
+    # v = []
+    # s = []
+    # for i in t:
+    #     v_tren = v0*i + a_konst*i
+    #     s_tren = s0 + v0*i + (1/2)*a_konst*(i**2)
+    #     v.append(v_tren)
+    #     s.append(s_tren)
 
     plt.subplot(2,2,1)
     plt.plot(t, s)

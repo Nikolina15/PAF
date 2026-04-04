@@ -13,20 +13,20 @@ dt = 0.1
 t = np.arange(0, 10+dt, dt)          #np.arange(start, stop, step) stvara listu!
 a = F/m
 a_graf = np.ones(len(t)) * a         #np.ones() stvara niz jedinica duljine kao argument u zagradama  
-# v = np.zeros(len(t))               #np.zeros() niz(array) istog tipa kao t ispunjen s nulama.
-# s = np.zeros(len(t))
+v = np.zeros(len(t))                 #np.zeros() niz(array) istog tipa kao t ispunjen s nulama.
+s = np.zeros(len(t))
 
-# for i in range(1, len(t)):            #Euler metoda
-#     v[i] = v[i-1] + a*dt
-#     s[i] = s[i-1] + v[i-1]*dt
+for i in range(1, len(t)):            #Euler metoda
+    v[i] = v[i-1] + a*dt
+    s[i] = s[i-1] + v[i-1]*dt
 
-v = []
-s = []
-for i in t:
-    v_tren = a*i
-    s_tren = (1/2)*a*(i**2)
-    v.append(v_tren)
-    s.append(s_tren)
+# v = []
+# s = []
+# for i in t:
+#     v_tren = a*i
+#     s_tren = (1/2)*a*(i**2)
+#     v.append(v_tren)
+#     s.append(s_tren)
 
 #print(v)
 #print(s)
