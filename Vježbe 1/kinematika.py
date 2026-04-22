@@ -14,7 +14,9 @@ def jednoliko_gibanje(F, m, v0, s0, vrijeme):
     v = np.zeros(len(t))               
     s = np.zeros(len(t))
 
-    for i in range(1, len(t)):            
+    
+
+    for i in range(len(t)):            
         v[i] = v[i-1] + a*dt
         s[i] = s[i-1] + v[i-1]*dt
 

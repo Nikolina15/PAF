@@ -24,9 +24,9 @@ for N in koraci:
     p_gornje.append(gornja)
     trap.append(t_integral)
 
-plt.plot(koraci, p_donje, label="donja suma")
-plt.plot(koraci, p_gornje, label="gornja suma")
-plt.plot(koraci, trap, label="trapezna")
+plt.scatter(koraci, p_donje, label="donja suma")
+plt.scatter(koraci, p_gornje, label="gornja suma")
+plt.scatter(koraci, trap, label="trapezna")
 plt.axhline(analiticko, label="analitičko", color="black")
 
 plt.xlabel("N (broj podjela)")

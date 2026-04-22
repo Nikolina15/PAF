@@ -30,6 +30,7 @@ class Particle:
 
         
     def __move(self, dt):
+        
         self.x += self.vx * dt
         self.y += self.vy * dt
 

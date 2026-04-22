@@ -31,7 +31,7 @@ def pravokutna_aproks_integrala(f, a, b, N=50):
 
     for i in range(N):
         donja_suma += f(x[i])
-        gornja_suma = f(x[i+1])
+        gornja_suma += f(x[i+1])
 
     donja_suma *= dx
     gornja_suma *= dx
