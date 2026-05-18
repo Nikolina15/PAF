@@ -22,11 +22,11 @@ class Projectile:
         self.y_list = [self.y]
 
     def move(self, dt):
-        # ubrzanja
+        #akceleracija
         ax = -(self.k / self.m) * self.vx
         ay = -self.g - (self.k / self.m) * self.vy
 
-        # Euler update
+        #Euler
         self.vx += ax * dt
         self.vy += ay * dt
 
