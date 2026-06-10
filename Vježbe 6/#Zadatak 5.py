@@ -3,7 +3,6 @@
 import math
 import numpy as np
 
-import numpy as np
 
 # 5 mjerenja temperature vrenja vode [u stupnjevima Celzijusa ]
 malo_n = [99.8 , 100.1 , 99.9 , 100.2 , 100.0]

@@ -79,6 +79,7 @@ for i in range(3):
 #print(radijus)
 
 gustoca_valjaka = []
+
 for i in range(3):
 
     print(f"VALJAK {i+1}")

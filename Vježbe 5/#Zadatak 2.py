@@ -9,8 +9,8 @@ N3 = 20000
 a = 1/3
 b = 5
 
-def zbroj(broj, N):
-    zbroj = 0
+def zbroj(broj, broj2, N):
+    zbroj = broj2
     for i in range(N):
         zbroj += broj
     
@@ -22,9 +22,9 @@ def oduzimanje(umanjenik, umanjitelj, N):
     
     return umanjenik
 
-zbroj_N1 = zbroj(a, N1)
-zbroj_N2 = zbroj(a, N2)
-zbroj_N3 = zbroj(a, N3)
+zbroj_N1 = zbroj(a, b, N1)
+zbroj_N2 = zbroj(a, b, N2)
+zbroj_N3 = zbroj(a, b,  N3)
 
 razlika_N1 = oduzimanje(b, a, N1)
 razlika_N2 = oduzimanje(b, a, N2)
